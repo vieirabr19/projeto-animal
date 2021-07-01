@@ -1,0 +1,35 @@
+.menu-bar{
+  position: fixed;
+  height: 100%;
+  width: 90%;
+  max-width: 320px;
+  margin: 0;
+  padding: 1em;
+  background: white;
+  top: 0;
+  left: -90%;
+  z-index: 1;
+  transition: left .4s ease-out;
+  -webkit-transition: left .4s ease-out;
+  -moz-transition: left .4s ease-out;
+  -ms-transition: left .4s ease-out;
+  -o-transition: left .4s ease-out;
+}
+
+.active-menu .menu-bar{
+  left: 0;
+}
+
+.active-menu .overlay{
+  background: rgba(0, 0, 0, .4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all .4s ease-out;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -ms-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+}
